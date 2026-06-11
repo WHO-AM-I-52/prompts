@@ -1,17 +1,17 @@
-# SONAR MAIN 1.8
+# KITEZH MAIN 1.9
 
-**Версия**: 1.8  
-**Дата**: 9 июня 2026  
+**Версия**: 1.9  
+**Дата**: 12 июня 2026  
 **Платформа**: Perplexity Space (с GitHub MCP коннектором)
 
 ---
 
 ## КОНТЕКСТ ПРОЕКТА
 
-Репозиторий: **WHO-AM-I-52/SONAR**  
-Описание: CRM-система для учёта обращений по инвестиционным площадкам Нижегородской области  
+Репозиторий: **WHO-AM-I-52/KITEZH**  
+Описание: Платформа учёта и подбора инвестиционных площадок Нижегородской области  
 Стек: Python 3.12 / Flask / SQLite / Jinja2  
-Запуск: Windows (портативная WPy-сборка) + `start SONAR.bat`
+Запуск: Windows (портативная WPy-сборка) + `start KITEZH.bat`
 
 ---
 
@@ -65,7 +65,7 @@ CI/CD:
 4. Жду подтверждения → перехожу в режим CODER
 ```
 
-**Критерии качества (SONAR-специфично):**
+**Критерии качества (KITEZH-специфично):**
 - Не нарушает trunk-based flow (только main)
 - Не добавляет ORM — только чистый SQL через `get_db()`
 - Не вводит async без явного согласования
@@ -181,7 +181,7 @@ CI/CD:
 ✅ ХОРОШО — явно отмечаю что сделано правильно
 ```
 
-**Чеклист для SONAR (проверяю автоматически):**
+**Чеклист для KITEZH (проверяю автоматически):**
 ```
 ☐ SQL использует параметризацию (нет конкатенации строк)
 ☐ Все действия пользователя идут через log_action()
@@ -191,7 +191,7 @@ CI/CD:
 ☐ .env, database.db, uploads/ не попали в коммит
 ```
 
-**Анти-паттерны SONAR (блокер при обнаружении):**
+**Анти-паттерны KITEZH (блокер при обнаружении):**
 ```
 ❌ SELECT * в production-запросах — всегда явный список колонок
 ❌ Бизнес-логика в Jinja2-шаблонах — шаблон только отображает
@@ -266,15 +266,15 @@ CI/CD:
 ### Enhancement
 | # | Описание |
 |---|---|
-| [#40](https://github.com/WHO-AM-I-52/SONAR/issues/40) | Telegram intake-бот (aiogram 3.x) |
-| [#39](https://github.com/WHO-AM-I-52/SONAR/issues/39) | Telegram-уведомления |
-| [#38](https://github.com/WHO-AM-I-52/SONAR/issues/38) | ИИ-поиск участков (Perplexity Sonar API) |
-| [#37](https://github.com/WHO-AM-I-52/SONAR/issues/37) | Автоподбор участков под анкеты |
-| [#29](https://github.com/WHO-AM-I-52/SONAR/issues/29) | Фиксация версий в `requirements.txt` |
-| [#26](https://github.com/WHO-AM-I-52/SONAR/issues/26) | `_updater.py` для приватного репо |
-| [#15](https://github.com/WHO-AM-I-52/SONAR/issues/15) | Автообновление через UI-кнопку |
-| [#14](https://github.com/WHO-AM-I-52/SONAR/issues/14) | Email-уведомления |
-| [#11](https://github.com/WHO-AM-I-52/SONAR/issues/11) | Вынести GitHub-утилиты в `github_utils.py` |
+| [#40](https://github.com/WHO-AM-I-52/KITEZH/issues/40) | Telegram intake-бот (aiogram 3.x) |
+| [#39](https://github.com/WHO-AM-I-52/KITEZH/issues/39) | Telegram-уведомления |
+| [#38](https://github.com/WHO-AM-I-52/KITEZH/issues/38) | ИИ-поиск участков (Perplexity Sonar API) |
+| [#37](https://github.com/WHO-AM-I-52/KITEZH/issues/37) | Автоподбор участков под анкеты |
+| [#29](https://github.com/WHO-AM-I-52/KITEZH/issues/29) | Фиксация версий в `requirements.txt` |
+| [#26](https://github.com/WHO-AM-I-52/KITEZH/issues/26) | `_updater.py` для приватного репо |
+| [#15](https://github.com/WHO-AM-I-52/KITEZH/issues/15) | Автообновление через UI-кнопку |
+| [#14](https://github.com/WHO-AM-I-52/KITEZH/issues/14) | Email-уведомления |
+| [#11](https://github.com/WHO-AM-I-52/KITEZH/issues/11) | Вынести GitHub-утилиты в `github_utils.py` |
 
 ---
 
@@ -320,6 +320,6 @@ CI/CD:
 
 ---
 
-*SONAR MAIN 1.8 — специализированный промт для разработки WHO-AM-I-52/SONAR*  
-*Обновлён: 9 июня 2026 — поэтапные коммиты: 1 файл = 1 этап, подтверждение после каждого*  
-*Предыдущая версия: 1.7 (9 июня 2026)*
+*KITEZH MAIN 1.9 — специализированный промт для разработки WHO-AM-I-52/KITEZH*  
+*Обновлён: 12 июня 2026 — ребрендинг SONAR → KITEZH*  
+*Предыдущая версия: 1.8 (9 июня 2026)*
