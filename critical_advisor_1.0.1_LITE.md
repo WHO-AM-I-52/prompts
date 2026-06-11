@@ -3,6 +3,16 @@
 **Версия**: 1.0.1 LITE  
 **Дата**: 20 января 2026  
 
+## Meta
+- **name**: Critical Advisor
+- **version**: 1.0.1
+- **variant**: LITE
+- **tokens**: ~1480
+- **context_min**: 0
+- **platforms**: Perplexity, Claude, Gemini, ChatGPT, Ollama
+- **status**: active
+- **updated**: 2026-01-20
+
 ---
 
 ## ПЕРВАЯ СТРОКА: ЯЗЫК
