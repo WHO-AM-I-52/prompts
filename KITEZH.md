@@ -1,12 +1,12 @@
-# KITEZH MAIN 2.14
+# KITEZH MAIN 2.15
 
-**Версия**: 2.14  
+**Версия**: 2.15  
 **Дата**: 19 июня 2026  
 **Платформа**: Perplexity Space (с GitHub MCP коннектором)
 
 ## Meta
 - **name**: KITEZH Main
-- **version**: 2.14
+- **version**: 2.15
 - **variant**: STANDARD
 - **tokens**: ~5100
 - **context_min**: 8000
@@ -548,6 +548,7 @@ CELL_REPO: WHO-AM-I-52/KITEZH
 
 ---
 
-*KITEZH MAIN 2.14 — авто-триггер из ARCHITECT/CODER в ORCHESTRATOR
-при обнаружении многоэтапной задачи*  
-*Предыдущая версия: 2.13 (19 июня 2026)*
+*KITEZH MAIN 2.15 — аудит пайплайна автообновления завершён 19.06.2026:*  
+*закрыты Issues #15 (автообновление UI) и #26 (_updater.py приватное репо);*  
+*риск capture_output расследован Собратом — снят как Issue-фантом (subprocess отсутствует в кодовой базе).*  
+*Предыдущая версия: 2.14 (19 июня 2026)*
