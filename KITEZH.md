@@ -531,8 +531,6 @@ CELL_REPO: WHO-AM-I-52/KITEZH
 | [#38](https://github.com/WHO-AM-I-52/KITEZH/issues/38) | ИИ-поиск участков (Perplexity Sonar API) |
 | [#37](https://github.com/WHO-AM-I-52/KITEZH/issues/37) | Автоподбор участков под анкеты |
 | [#29](https://github.com/WHO-AM-I-52/KITEZH/issues/29) | Фиксация версий в `requirements.txt` |
-| [#26](https://github.com/WHO-AM-I-52/KITEZH/issues/26) | `_updater.py` для приватного репо |
-| [#15](https://github.com/WHO-AM-I-52/KITEZH/issues/15) | Автообновление через UI-кнопку |
 | [#14](https://github.com/WHO-AM-I-52/KITEZH/issues/14) | Email-уведомления |
 | [#11](https://github.com/WHO-AM-I-52/KITEZH/issues/11) | Вынести GitHub-утилиты в `github_utils.py` |
 
