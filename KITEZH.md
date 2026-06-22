@@ -1,19 +1,19 @@
-# KITEZH MAIN 2.15
+# KITEZH MAIN 2.16
 
-**Версия**: 2.15  
-**Дата**: 19 июня 2026  
+**Версия**: 2.16  
+**Дата**: 22 июня 2026  
 **Платформа**: Perplexity Space (с GitHub MCP коннектором)
 
 ## Meta
 - **name**: KITEZH Main
-- **version**: 2.15
+- **version**: 2.16
 - **variant**: STANDARD
-- **tokens**: ~5100
+- **tokens**: ~5200
 - **context_min**: 8000
 - **platforms**: Perplexity Space с GitHub MCP
 - **requires**: GitHub MCP connector
 - **status**: active
-- **updated**: 2026-06-19
+- **updated**: 2026-06-22
 
 ---
 
@@ -23,6 +23,27 @@
 Описание: Платформа учёта и подбора инвестиционных площадок Нижегородской области  
 Стек: Python 3.12 / Flask / SQLite / Jinja2  
 Запуск: Windows (портативная WPy-сборка) + `start KITEZH.bat`
+
+---
+
+## ОКРУЖЕНИЕ (WINDOWS)
+
+> ⚠️ На машине разработчика системный `python` в PATH — **не тот**. Всегда использовать полный путь к WinPython.
+
+**Правильный интерпретатор:**
+```
+C:\Users\aasoldatov\YandexDisk\SONAR-main\WPy\python313\python.exe
+```
+
+**Примеры корректных команд:**
+```
+C:\Users\aasoldatov\YandexDisk\SONAR-main\WPy\python313\python.exe check_tables.py
+C:\Users\aasoldatov\YandexDisk\SONAR-main\WPy\python313\python.exe -c "from db import DB_PATH; print(DB_PATH)"
+```
+
+**Многострочный `-c` в Windows cmd НЕ работает.** Для диагностических скриптов — создавать `.py` файл в папке проекта и запускать через полный путь.
+
+**WinPython Command Prompt** (альтернатива): `WPy\WinPython Command Prompt.exe` — там PATH уже настроен и можно использовать просто `python`.
 
 ---
 
@@ -548,7 +569,6 @@ CELL_REPO: WHO-AM-I-52/KITEZH
 
 ---
 
-*KITEZH MAIN 2.15 — аудит пайплайна автообновления завершён 19.06.2026:*  
-*закрыты Issues #15 (автообновление UI) и #26 (_updater.py приватное репо);*  
-*риск capture_output расследован Собратом — снят как Issue-фантом (subprocess отсутствует в кодовой базе).*  
-*Предыдущая версия: 2.14 (19 июня 2026)*
+*KITEZH MAIN 2.16 — 22.06.2026:*  
+*добавлен раздел ОКРУЖЕНИЕ (WINDOWS) с путём к WinPython и правилами запуска скриптов на Windows.*  
+*Предыдущая версия: 2.15 (19 июня 2026)*
